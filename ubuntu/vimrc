@@ -1,8 +1,12 @@
-syntax enable
+"""""""""""""""""""""""""""""""
+" Vim configuration by aotero "
+"""""""""""""""""""""""""""""""
+
+" Disable alert sound and use visual alert
+set visualbell
+
 set number
-
 set cursorline
-
 " Do not keep backup or .swp files
 set nobackup
 set nowritebackup
@@ -11,13 +15,13 @@ set noswapfile
 " Use vim defaults.
 set nocompatible
 
-set ts=4  " tab span
-set sw=4  " indetation span
+set ts=2  " tab span
+set sw=2  " indetation span
 
 set expandtab  " always expands tab to spaces
 set wrap  " wrap long lines to screen size 
 
-colorscheme darkblue
+syntax enable
 
 " status line color of current window & non-current windows
 highlight StatusLineNC guifg=SlateBlue guibg=Yellow
@@ -42,10 +46,11 @@ set showmatch
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
-set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+set list listchars=tab:--,trail:-,nbsp:-
 set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
 \ [%l/%L\ (%p%%)
 filetype plugin indent on
 au FileType py set autoindent
 au FileType py set smartindent
-au FileType py set textwidth=79 " PEP-8 Friendly
+au FileType py set textwidth=79 " PEP-8 Friend
+

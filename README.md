@@ -1,1 +1,3 @@
-# system_configurations
+# System Configurations
+
+This repo contains some of my preferences when setting up Bash, Vim, ...
