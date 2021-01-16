@@ -2,8 +2,8 @@
 " Vim configuration by aotero "
 """""""""""""""""""""""""""""""
 
-" Disable alert sound and use visual alert
-set visualbell
+" Disable alert sound and visual alert
+set novisualbell
 
 set number
 set cursorline
